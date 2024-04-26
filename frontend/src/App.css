@@ -1,0 +1,116 @@
+    body{
+        background: black;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2cm; /* Add left padding */
+        padding-right: 2cm; /* Add right padding */
+    }
+
+    .left {
+        flex: 1;
+        max-width: 300px; /* Adjust the max-width as needed */
+        padding: 20px;
+    }
+
+    .left img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .right {
+        flex: 1;
+        
+        margin-left: 20px; /* Add some margin between left and right content */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column size as needed */
+        grid-gap: 10px; /* Adjust gap between grid items */
+    }
+
+    .grid-item {
+        background-color: #f0f0f0; /* Placeholder background color */
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    @media only screen and (max-width: 1100px) {
+        .container {
+            flex-direction: column; /* Reverse the order of flex items */
+        }
+
+        .left {
+            max-width: none; /* Remove max-width to occupy full width */
+            padding: 20px;
+            text-align: center; /* Center align the content */
+        }
+
+        .right {
+            margin-left: 0; /* Remove margin on smaller screens */
+        }
+    }
+    .navbar {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    max-height: 30px;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+     /* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar img {
+        margin: 0;
+    }
+    
+    .navbar ul {
+        margin-top: 10px;
+    }
+    
+    .navbar li {
+        margin: 0;
+    }
+}
+
+
+
+
+p {
+    color:white;
+}

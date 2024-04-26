@@ -1,0 +1,67 @@
+  .content-left{
+    flex: 1;
+    max-width: 100px; /* Adjust the max-width as needed */
+    padding: 10px;
+  }
+
+  .content-right{
+    flex: 1; 
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a.active {
+    color: #ffcc00;  
+    font-weight: bold;  
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  .main-content {
+    float: right;
+    width: 70%;  
+  }
+  
+  .content {
+    margin-top: 40px;
+  }
+  
+  .contact-details, .legal-details {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .contact-details p, .legal-details p {
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 800px) {
+ 
+    .nav-links {
+      display: flex;
+      
+      
+    } 
+    .nav-links li{
+        padding: 10px;
+    }
+  }

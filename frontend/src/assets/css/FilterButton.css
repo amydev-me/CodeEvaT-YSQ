@@ -1,0 +1,34 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-button {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  background-color: #0000; /* Default button color */
+  border: none;
+  width: 100px;
+}
+
+.filter-button.active {
+  background-color: #28282B; /* Active button color */
+}
+
+.filter-button:hover {
+  background-color: #28282B; /* Hover color */
+}
+
+@media only screen and (max-width: 1100px) {
+  .filters {
+      display: inline-block;
+  } 
+
+  .filter-button {
+    text-align: center;
+  }
+}

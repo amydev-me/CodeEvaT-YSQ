@@ -1,0 +1,29 @@
+.image-grid-item {
+    position: relative; /* Add position relative to create stacking context */
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.image-grid-item img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    z-index: 0; /* Ensure image stays below text */
+}
+
+.image-grid-item p {
+    margin: 7px 0;
+}
+
+.inner-img {
+    transition: 0.3s;
+}
+    
+.inner-img:hover {
+    transform: scale(1.1);
+}
